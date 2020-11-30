@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% load my_extras %}
+  {% block body_block %}
+    <p> GO to: http://127.0.0.1:8000/basic_app/relative/</p>
+    <h1>{{ text|klos:'world' }}</h1>
+    <h1>{{ number|add:'95' }}</h1>
+
+    {% endblock %}
